@@ -1,4 +1,4 @@
-# CadFLASK
+# Cadastro em FLASK
 
 Aplicação web simples desenvolvida com Flask para cadastro e gerenciamento de categorias.
 
