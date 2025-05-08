@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO DE PRODUTOS 💕</title>
+</head>
+<body>
+    <h2 style = "text-align: center;">Cadastro de Produtos 💕</h2>
+
+    <form action = "{{url_for('categorias_func')}}" method = "POST">
+        <label>ID</label>
+        <input type = "text" name = "id">
+        <label>Nome</label>
+        <input type="text" name="nome">
+        <label>Descrição</label>
+        <input type="text" name="descricao">
+        <label>Preço</label>
+        <input type="text" name="preco">
+        <label>Marca</label>
+        <input type="text" name="marca">
+        <button>Adicionar</button>
+    </form>
+</body>
+</html>

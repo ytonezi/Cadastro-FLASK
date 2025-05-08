@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE DE PRODUTOS 💕</title>
+</head>
+<body>
+    <h2 style = "text-align: center;">Update de Produtos 💕</h2>
+    <hr>
+
+    <form action = "{{url_for('atualiza_categoria', id=id)}}" method = "POST">
+        <label>ID</label>
+        <input type = "text" name = "id" value="{{id}}">
+        <label>Nome</label>
+        <input type="text" name="nome" value="{{nome}}">
+        <label>Descrição</label>
+        <input type="text" name="descricao" value="{{descricao}}">
+        <label>Preço</label>
+        <input type="text" name="preco" value="{{preco}}">
+        <label>Marca</label>
+        <input type="text" name="marca" value="{{marca}}">
+        <button>Editar</button>
+    </form>
+    <a href="app.py"></a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE PRODUTOS 💕</title>
+</head>
+<body>
+    <h2 style="text-align: center;">LISTA DE PRODUTOS 💕</h2>
+
+    <a href="{{url_for('categorias_func')}}" class = "btn btn secondary">Adicionar Produto</a>
+    <br><br>
+    <table class = "table table-bordered table-hover">
+        <thead class = "table-dark">
+            <tr>
+                <th scope = "col">Id</th>
+                <th scope = "col">Nome</th>
+                <th scope = "col">Descrição</th>
+                <th scope = "col">Preço</th>
+                <th scope = "col">Marca</th>  
+        </thead>
+        <tbody>
+            {% for item in categorias %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+                <td>
+                    <a href="{{item[0]}}/atualiza_categoria" class = "btn btn-secondary btn-xs">Editar</a>
+                    <a href="{{item[0]}}/remove_categoria" onclick="return confirm('Deseja excluir este registro?')" class = "btn btn-danger btn-xs">Excluir</a>
+                    <a href="lista_categorias.html">
+                </td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</body>
+</html>
